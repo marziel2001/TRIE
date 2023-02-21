@@ -1,0 +1,91 @@
+TRIE
+drzewo TRIE przechowujące tłumaczenia słów. Słowo w języku oryginalnym i tłumaczenie nie będzie dłuższe niż 16 znaków i będzie zawierało jedynie małe litery.
+Program powinien obsługiwać następujące polecenia:
++ s t
+dodanie słowa s z tłumaczeniem t
+? s
+zapytanie o słowo s – należy wypisać tłumaczenie słowa s lub - (minus) gdy tłumaczenie nie zostało dodane
+* s
+polecenie wypisania tłumaczeń wszystkich słów, których prefiksem jest s (włączając słowo s, jeżeli jest dodane do słownika)
+
+Przykład
+Wejście
++ dog pies
++ cat kot
++ do robic
++ doggie piesek
++ doggies pieski
++ dolphin delfin
++ ant mrowka
++ zzz xxx
+? dog
+? cat
+? do
+? doggie
+? dolphin
+? ant
+? zzz
+? d
+? dot
+? dom
+? dogg
+? dol
+? dolp
+? dolph
+? dolphi
+? dolphine
+* a
+* d
+* do
+* dog
+* dogg
+* doggie
+* doggies
+* z
+* b
+* dot
+* dolphen
+* doggiess
+
+
+Wyjście
+pies
+kot
+robic
+piesek
+delfin
+mrowka
+xxx
+-
+-
+-
+-
+-
+-
+-
+-
+-
+mrowka
+robic
+pies
+piesek
+pieski
+delfin
+robic
+pies
+piesek
+pieski
+delfin
+pies
+piesek
+pieski
+piesek
+pieski
+piesek
+pieski
+pieski
+xxx
+-
+-
+-
+-
